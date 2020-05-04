@@ -118,7 +118,7 @@ abstract class AbstractLoader
 
                 break;
             case \is_array($checker):
-                $checker = new CallableChecker($key, static function ($value) use ($checker) {return \in_array($value, $checker, true); });
+                $checker = new CallableChecker($key, static function ($value) use ($checker) {return in_array($value, $checker, true); });
 
                 break;
             default:
@@ -249,7 +249,7 @@ abstract class AbstractLoader
 
                 break;
             case \is_array($checker):
-                $checker = new CallableChecker($key, static function ($value) use ($checker) {return \in_array($value, $checker, true); });
+                $checker = new CallableChecker($key, static function ($value) use ($checker) {return in_array($value, $checker, true); });
 
                 break;
             default:
